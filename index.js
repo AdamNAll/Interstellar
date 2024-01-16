@@ -34,6 +34,19 @@ app.get('/edu/*', cors({ origin: false }), async (req, res, next) => {
       res.end(Buffer.from(data));
     } else {
       next();
+      
+var password;
+
+var pass1="2012";
+
+password=prompt('Please enter your password to view this page!',' ');
+
+if (password==pass1)
+  alert('Password Correct! Click OK to enter!');
+else
+   {
+    window.location="google.com";
+    }
     }
   } catch (error) {
     console.error('Error fetching:', error);
